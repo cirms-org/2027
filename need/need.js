@@ -1,4 +1,4 @@
-// need.js — CIRMS 2026 Need Slide Generator
+// need.js — CIRMS 2027 Need Slide Generator
 //
 // Renders the sentence template onto a 1920×1080 canvas in real time as
 // the speaker fills in the three blanks, then exports it as a PNG for
@@ -134,11 +134,11 @@ function renderSlide() {
 
   ctx.fillStyle = C.white;
   ctx.font = '600 70px "DM Sans", sans-serif';
-  ctx.fillText('CIRMS 2026 \u2014 Need', PAD, 128);
+  ctx.fillText('CIRMS 2027 \u2014 Need', PAD, 128);
 
   ctx.fillStyle = C.muted;
   ctx.font = '400 33px "DM Sans", sans-serif';
-  ctx.fillText('Annual Meeting  \u00b7  April 13\u201315, 2026', PAD, 190);
+  ctx.fillText('Annual Meeting  \u00b7  April 27\u201329, 2027', PAD, 190);
 
   // Sentence
   ctx.letterSpacing = '-0.5px';
@@ -203,7 +203,7 @@ function renderSlide() {
 document.getElementById('btnDownload').addEventListener('click', () => {
   renderSlide();
   const a    = document.createElement('a');
-  a.download = 'CIRMS-2026-Need.png';
+  a.download = 'CIRMS-2027-Need.png';
   a.href     = canvas.toDataURL('image/png');
   a.click();
 });

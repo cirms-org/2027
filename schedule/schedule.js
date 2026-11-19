@@ -23,7 +23,7 @@ import TinyGesture from 'https://cdn.jsdelivr.net/npm/tinygesture@3.0.0/+esm';
 
 // ── Debug ─────────────────────────────────────────────────────────────────────
 
-const DEBUG_DAY  = null // "Mon";   // "Mon"/"Tue"/"Wed" to test now-marker with today's clock; null for production
+const DEBUG_DAY  = null // "day1"; // "day1"/"day2"/"day3" to test now-marker with today's clock; null for production
 const DEBUG_TIME = null //"14:10"; // "HH:MM" to override current time; null for production
 
 // ── Config ────────────────────────────────────────────────────────────────────
@@ -32,9 +32,9 @@ const CSV_FILE    = "schedule.csv";
 const FULL_TRACKS = new Set(["Plen","Break","Photo","Train"]);
 const BASE_TRACKS = ["MApp","RPHS","RPME"];
 const TRACK_COL   = { MApp:2, RPHS:3, RPME:4 };   // grid columns (col 1 = time gutter)
-const DAY_LABELS  = { Mon:"Monday, April 13", Tue:"Tuesday, April 14", Wed:"Wednesday, April 15" };
-const DAY_LABELS_SHORT = { Mon:"Mon Apr 13", Tue:"Tue Apr 14", Wed:"Wed Apr 15" };
-const DAY_DATES   = { Mon:"2026-04-13",      Tue:"2026-04-14",      Wed:"2026-04-15" };
+const DAY_LABELS  = { day1:"Tuesday, April 27", day2:"Tuesday, April 28", day3:"Thursday, April 29" };
+const DAY_LABELS_SHORT = { day1:"Tue Apr 27", day2:"Wed Apr 28", day3:"Thu Apr 29" };
+const DAY_DATES   = { day1:"2027-04-27", day2:"2027-04-28", day3:"2027-04-29" };
 
 // joint track → CSS class = highest-priority track in pair (MApp > RPHS > RPME)
 const TRACK_PRIORITY = { MApp: 0, RPHS: 1, RPME: 2 };
