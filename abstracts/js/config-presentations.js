@@ -2,7 +2,7 @@
  * Configuration for Posters
  */
 
-config.dataFileUrl      = '/2026/schedule/schedule.csv';
+config.dataFileUrl      = '/2027/schedule/schedule.csv';
 config.visibleColumns   = ['Speaker', 'Affiliation', 'Title',];
 config.requiredFields   =  ['Speaker', 'Url'];
 config.columnWidthOverrides = {
