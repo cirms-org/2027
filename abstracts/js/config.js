@@ -7,7 +7,7 @@ const config = {
 
     // Page header
     title: 'CIRMS 2027 — Abstracts',
-    subtitle: 'Annual Meeting  ·  April 13–15, 2027',
+    subtitle: 'Annual Meeting  ·  April 27–29, 2027',
 
     // Data sets
     dataSets: [
